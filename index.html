@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Mariappan N | Unity Gameplay Developer
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+
+        <div class="loader-content">
+
+            <h1>
+                MAARI<span>.</span>
+            </h1>
+
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+
+            <p>
+                INITIALIZING SYSTEM...
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- BACKGROUND -->
+    <div id="particles"></div>
+
+    <div class="bg-grid"></div>
+
+    <div class="bg-glow glow1"></div>
+
+    <div class="bg-glow glow2"></div>
+
+    <div class="cursor"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+
+        <div class="logo">
+
+            <img src="Images/sym.png">
+
+            <div>
+
+                <h3>MAARI</h3>
+
+                <span>SOFTWARE & GAMEPLAY ENGINEER</span>
+
+            </div>
+
+        </div>
+
+        <ul>
+
+            <li><a href="#">HOME</a></li>
+
+            <li><a href="#about">ABOUT</a></li>
+
+            <li><a href="#projects">PROJECTS</a></li>
+
+            <li><a href="#skills">SKILLS</a></li>
+
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content fade">
+
+            <span class="mini-title">
+                HELLO, I'M
+            </span>
+
+            <h1>
+                MARIAPPAN<br>
+                <span>SOFTWARE & GAMEPLAY ENGINEER</span>
+            </h1>
+
+            <h2>
+                Unity & C# .NET Developer | Gameplay Engineer
+            </h2>
+
+            <p>
+                Results-driven Unity Game Developer with
+                3 years of experience creating 2D/3D games,
+                escape rooms, puzzle gameplay systems
+                and mobile game experiences.
+            </p>
+
+            <button onclick="scrollToProjects()">
+                VIEW WORK
+            </button>
+
+            <div class="socials">
+
+                <a href="https://github.com/Maari86" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mariappan-n-6ab413255" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="mailto:prakash333.pk3@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image fade">
+
+            <div class="hero-blur"></div>
+
+            <div class="ring"></div>
+
+            <img src="Images/Heros.png">
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about fade" id="about">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+                ABOUT ME
+            </span>
+
+            <h2>
+                Gameplay Programmer
+                & Puzzle System Engineer
+            </h2>
+
+            <p>
+                Results-driven Unity Game Developer with 3 years of hands-on experience in creating 2D/3D games, escape
+                rooms, puzzle-based gameplay, and mobile game development. Proficient in C# and Unity Engine, with
+                additional ongoing hands-on experience in .NET for backend development. Currently expanding skillset in
+                .NET
+                technologies with the goal of transitioning into full-stack or backend-focused roles. Strong
+                collaborator with a
+                passion for building efficient, maintainable, and user-centric applications
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="featured-work fade" id="projects">
+
+        <div class="section-heading">
+
+            <span>
+                FEATURED WORK
+            </span>
+
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card glass">
+
+            <div class="project-slider">
+
+                <button class="slide-btn prev">&#10094;</button>
+
+                <img id="projectSlide" src="Images/project1.WEBP">
+
+                <button class="slide-btn next">&#10095;</button>
+
+            </div>
+
+            <div class="project-info">
+
+                <h3>
+                    Escape Room System
+                </h3>
+
+                <div class="tags">
+
+                    <span>SYSTEM DESIGN</span>
+
+                    <span>GAMEPLAY</span>
+
+                    <span>SCALABLE</span>
+
+                </div>
+
+                <p>
+                    Designed a modular puzzle framework
+                    enabling rapid level creation
+                    and reusable interaction systems.
+                </p>
+
+                <div class="metrics">
+
+                    <div>
+
+                        <strong>60%</strong>
+
+                        <span>
+                            Faster Level Creation
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Reusable</strong>
+
+                        <span>
+                            Puzzle Modules
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>SO</strong>
+
+                        <span>
+                            Architecture
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <button onclick="window.open('https://play.google.com/store/apps/dev?id=5272862504016520651')">
+                        VIEW GAME
+                    </button>
+
+                    <button class="ghost" onclick="openCaseStudy('escape')">
+
+                        PROJECT BREAKDOWN
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- CASE STUDY MODAL -->
+
+    <div class="case-study-modal" id="caseStudy">
+
+        <div class="case-study-content glass">
+
+            <span class="close-modal" onclick="closeCaseStudy()">
+                &times;
+            </span>
+
+            <h2>
+                Escape Room System
+            </h2>
+
+            <p class="case-subtitle">
+                Unity Gameplay Engineering Project
+            </p>
+
+            <div class="case-section">
+
+                <h3>Overview</h3>
+
+                <p>
+                    Designed and developed a modular escape room puzzle framework
+                    focused on scalable gameplay systems and reusable mechanics
+                    for mobile platforms.
+                </p>
+
+            </div>
+
+            <div class="case-section">
+
+                <h3>My Role</h3>
+
+                <ul>
+
+                    <li>Gameplay Programmer</li>
+
+                    <li>Puzzle System Engineer</li>
+
+                    <li>UI Integration</li>
+
+                    <li>Mobile Optimization</li>
+
+                </ul>
+
+            </div>
+            <div class="case-section">
+
+                <h3>Project Contribution</h3>
+
+                <ul>
+
+                    <li>
+                        Developed and maintained core gameplay systems
+                        for escape room mechanics and puzzle interactions.
+                    </li>
+
+                    <li>
+                        Built reusable modular systems to speed up
+                        future level production.
+                    </li>
+
+                    <li>
+                        Implemented inventory, interaction,
+                        and progression systems.
+                    </li>
+
+                    <li>
+                        Optimized scenes and gameplay flow
+                        for mobile devices.
+                    </li>
+
+                    <li>
+                        Collaborated with designers and QA
+                        for gameplay balancing and bug fixing.
+                    </li>
+
+                    <li>
+                        Managed Android and iOS build generation
+                        and deployment workflow.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="case-section">
+
+                <h3>Core Features</h3>
+
+                <ul>
+
+                    <li>Reusable puzzle architecture</li>
+
+                    <li>Inventory system</li>
+
+                    <li>Hint mechanics</li>
+
+                    <li>Scene transition system</li>
+
+                    <li>Mobile touch controls</li>
+
+                </ul>
+
+            </div>
+
+            <div class="case-section">
+
+                <h3>Tech Stack</h3>
+
+                <div class="case-tags">
+
+                    <span>Unity</span>
+
+                    <span>C#</span>
+
+                    <span>DOTween</span>
+
+                    <span>ScriptableObjects</span>
+
+                    <span>Cinemachine</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- SKILLS -->
+    <section class="skills-section fade" id="skills">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+                TECH STACK
+            </span>
+
+            <h2>
+                Technologies & Tools
+            </h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-box glass">
+
+                <h3>
+                    GAME DEVELOPMENT
+                </h3>
+
+                <span>Unity 2D/3D</span>
+
+                <span>C#</span>
+
+                <span>Gameplay Systems</span>
+
+                <span>DOTween</span>
+
+                <span>Cinemachine</span>
+
+            </div>
+
+            <div class="skill-box glass">
+
+                <h3>
+                    TOOLS & WORKFLOW
+                </h3>
+
+                <span>Git</span>
+
+                <span>Unity Profiler</span>
+
+                <span>Android Builds</span>
+
+                <span>iOS Builds</span>
+
+                <span>Xcode</span>
+
+                <span>ASP.NET Core</span>
+
+                <span>Entity Framework</span>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline-section fade">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+                EXPERIENCE
+            </span>
+
+            <h2>
+                Career Timeline
+            </h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item glass">
+
+                <span>2022</span>
+
+                <h3>
+                    Technical Developer
+                </h3>
+
+                <p>
+                    Participated in Unity-based game projects, focusing on gameplay
+                    functionality and performance.
+                    Converted game design concepts into working features with clean,
+                    maintainable code.
+                    Contributed to UI design and implementation across various
+                    platforms.
+                </p>
+
+            </div>
+
+            <div class="timeline-item glass">
+
+                <span>2023</span>
+
+                <h3>
+                    Unity Game Developer
+                </h3>
+
+                <p>
+                    Designed and developed 2D escape room and puzzle games using
+                    Unity.
+                    Implemented interactive level mechanics and complex puzzles to
+                    enhance gameplay.
+                    Optimized game levels and scenes for better performance on
+                    mobile devices.
+                    Conducted in-depth testing of game builds, resolved gameplay
+                    and UI bugs, and ensured stability
+                    across devices.
+                    Managed end-to-end build process for Android and iOS platforms.
+                    Collaborated with designers and QA for testing, bug fixing, and
+                    level polishing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section fade" id="contact">
+
+        <div class="contact-card glass">
+
+            <h2>
+                Let's Build Something Amazing
+            </h2>
+
+            <p>
+                Open for Unity gameplay programming,
+                mobile game development,
+                and international opportunities.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="mailto:prakash333.pk3@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="tel:+917448549774">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            Designed & Developed by Mariappan N
+        </p>
+
+        <span>
+            SOFTWARE & GAMEPLAY ENGINEER
+        </span>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
