@@ -146,11 +146,11 @@ hoverElements.forEach(el => {
 
 const projectImages = [
 
-    "Images/project1.WEBP",
-    "Images/project2.WEBP",
-    "Images/project3.WEBP",
-    "Images/project4.WEBP",
-    "Images/project4.WEBP"
+    "Images/project1.png",
+    "Images/project2.png",
+    "Images/project3.png",
+    "Images/project4.png",
+    "Images/project4.png"
 
 ];
 
