@@ -386,7 +386,7 @@ body {
 
 .hero-image {
 
-    width: 50%;
+    width: 80%;
 
     display: flex;
 
@@ -403,7 +403,7 @@ body {
 
     width: 100%;
 
-    max-width: 550px;
+    max-width: 950px;
 
     object-fit: contain;
 
